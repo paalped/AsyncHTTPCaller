@@ -3,14 +3,11 @@ AsyncHTTPCaller is a FME Desktop transformer with key purpose to make HTTP reque
 
 To make this transformer compatible with your FME Desktop you need:
 
-FME Desktop > build 18474
+FME Desktop > build 19801
 
-You need to install these addinional libraries in python 3.6:
-aiohttp and it requirements
-in this  folder:
-..YourFMEHomeFolder\fmepython36
-
-Check your install by importing aiohttp in PythonCaller, or PythonCreator or in any other places where you can use python in FME.
+This transformer will install required packages aiohttp and aiofiles.
+Install might fail, it will try to install these in servereal different ways.
+If install fails it will fallback on request and do synchronus downloads.
 
 Next install this transformer by downloading AsyncHTTPCaller.fmx, doubleclick or rightclick and choose application to run this.
 
